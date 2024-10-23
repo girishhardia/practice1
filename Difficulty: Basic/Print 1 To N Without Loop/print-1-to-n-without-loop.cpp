@@ -7,16 +7,16 @@ using namespace std;
 class Solution{
     public:
     //Complete this function
-    int i = 1;
     void printNos(int N)
     {
         //Your code here
         
-        if(i<=N){
-            cout<<i<<" ";
-            i++;
-            printNos(N);
+        if(N==0){
+            return;
         }
+        
+        printNos(N-1);
+        cout<<N<<" ";
     }
 };
 
